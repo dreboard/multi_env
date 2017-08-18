@@ -14,7 +14,7 @@
 	
     echo -e "\n--- Installing Xdebug ---\n"
     sudo apt-get install -y php-xdebug
-    sudo cp /vagrant/dev_ops/apache/20-xdebug.ini /etc/php/7.1/cli/conf.d
+    sudo cp /var/www/dev/dev_ops/apache/20-xdebug.ini /etc/php/7.1/cli/conf.d
 
     # Set up profiler for development only
 	if [ -d "/var/www/dev/temp/debug" ]; then
