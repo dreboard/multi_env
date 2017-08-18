@@ -1,0 +1,35 @@
+{
+  "name": "dreboard/multi_env",
+  "description": "My API Core System Classes",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andre Board",
+      "email": "dre.board@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "dreboard/multi_env",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/dreboard/multi_env.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0.0",
+    "monolog/monolog": "1.23.*",
+    "wazaari/monolog-mysql": "1.0.0",
+    "phpmailer/phpmailer": "~5.2"
+  },
+  "autoload": {
+    "psr-4": { "Multisite\\System\\": ["src/classes", "src/loggers", "src/interfaces", "src/traits"] }
+  }
+}
